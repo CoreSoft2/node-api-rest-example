@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 routes = require('./routes/tvshows')(app);
 
-mongoose.connect('mongodb://4b2318f26094197f315f0333865968ff:fca8aa4562254f3423f75caf1c3caf07@leader.mongodb.discoverd:27017/045f9f9d570e597d7025b699261f91fd', function(err, res) {
+mongoose.connect(process.env.DATABASE_URL, function(err, res) {
 	if(err) {
 		console.log('ERROR: connecting to Database. ' + err);
 	} else {
