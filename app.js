@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 routes = require('./routes/tvshows')(app);
 
-mongoose.connect('mongodb://441e910deaec5de22fb5aa455186d1a5:24ca2ac783273c1dff5ef52fb64002a9@leader.mongodb.discoverd:27017/2cf3e02f22a187650319aef4a2475197/tvshows', function(err, res) {
+mongoose.connect('mongodb://4b2318f26094197f315f0333865968ff:fca8aa4562254f3423f75caf1c3caf07@leader.mongodb.discoverd:27017/045f9f9d570e597d7025b699261f91fd/tvshows', function(err, res) {
 	if(err) {
 		console.log('ERROR: connecting to Database. ' + err);
 	} else {
